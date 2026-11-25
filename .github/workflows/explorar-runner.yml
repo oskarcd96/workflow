@@ -5,6 +5,8 @@ jobs:
   explorar:
     runs-on: ubuntu-latest
     steps:
+      - name: Traer el código
+        uses: actions/checkout@v6
       - name: ¿Qué hay en la máquina?
         run: |
           pwd
