@@ -1,0 +1,13 @@
+name: Explorar runner
+on: workflow_dispatch
+
+jobs:
+  explorar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ¿Qué hay en la máquina?
+        run: |
+          pwd
+          ls -la
+      - name: Ejecutar un script del repo
+        run: python src/1-split-dataset.py
