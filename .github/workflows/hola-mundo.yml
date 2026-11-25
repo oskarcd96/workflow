@@ -1,0 +1,12 @@
+name: Hola Mundo
+on: workflow_dispatch # botón manual "Run workflow"
+jobs:
+  primer-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar
+        run: echo "¡Hola, MLOps!"
+      - name: Varias líneas
+        run: |
+          echo "Primera línea"
+          echo "Segunda línea"
